@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.state-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100px;
+  text-align: center;
+}
+
+.dash-header {
+  text-align: center;
+  margin: 0;
+}
