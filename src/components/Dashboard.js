@@ -1,12 +1,11 @@
-import { render } from "@testing-library/react"
-import { Fragment } from "react";
-
 import DashboardHeader from './DashboardHeader';
 import DashboardLinks from './DashboardLinks';
+import NavLinks from './NavigationMenu';
 
 const Dashboard = ({headerImage, type, links}) => {
     return(
         <div>
+            <NavLinks />
             <DashboardHeader
                 headerImage={headerImage}
                 year={new Date().getFullYear()}

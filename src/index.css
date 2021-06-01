@@ -46,6 +46,43 @@ ul {
   transform: scale(1.05);
 }
 
+.nav-menu {
+  background-color: dodgerblue;
+}
+
+.nav-link {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: deepskyblue;
+}
+
+.nav-link > a {
+  color: white;
+}
+
 div {
   margin: 15px 0 10px 0;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-left: 50px;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+}
+
+.headline {
+  margin-left: 50px;
 }

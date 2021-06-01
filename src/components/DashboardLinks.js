@@ -7,7 +7,7 @@ const DashboardLinks = ({links}) => {
             <ul>
                 {links.map(link => {
                     return (
-                        <Link to={link.url} className="link">{link.name}</Link>
+                        <Link key={link.name} to={link.url} className="link">{link.name}</Link>
                     );
                 })}
             </ul>
