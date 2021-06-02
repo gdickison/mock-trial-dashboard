@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Home from './components/Home';
+import MyTeam from './components/MyTeam';
 import FourOhFour from './components/FourOhFour';
 import Dashboard from './components/Dashboard';
 import OrientationVideo from './components/OrientationVideo';
@@ -47,6 +48,9 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home links={homeLinks} type="home" headerImage={stateLogo} />
+        </Route>
+        <Route path="/my_team" exact>
+          <MyTeam links={homeLinks} type="My_Team" headerImage={stateLogo} />
         </Route>
         <Route path="/team_dashboard" exact>
           <Dashboard type="team" headerImage={stateLogo} links={teamLinks} />

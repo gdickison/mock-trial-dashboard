@@ -2,10 +2,10 @@ import DashboardLinks from './DashboardLinks';
 import DashboardHeader from './DashboardHeader';
 import NavLinks from './NavigationMenu';
 
-const Home = ({links, headerImage, type}) => {
+const MyTeam = ({links, headerImage, type}) => {
     return (
         <div>
-            <h1>This is the Home top level main page</h1>
+            <h1>This is the MyTeam page</h1>
             <NavLinks />
             <DashboardHeader
                 headerImage={headerImage}
@@ -18,4 +18,4 @@ const Home = ({links, headerImage, type}) => {
     );
 }
 
-export default Home;
+export default MyTeam;

@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
+
+
 const NavLinks = () => {
     return (
         <div className="nav-menu">
@@ -8,7 +10,7 @@ const NavLinks = () => {
                     <NavLink to="/" exact>Home</NavLink>
                 </li>
                 <li className="nav-link">
-                    <NavLink to="/" exact>My Team Page</NavLink>
+                    <NavLink to="/my_team" exact>My Team Page</NavLink>
                 </li>
                 <li className="nav-link">
                     <NavLink to="/team_dashboard" exact>Team Dashboard</NavLink>
