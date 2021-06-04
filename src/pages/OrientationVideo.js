@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import NavLinks from './NavigationMenu';
+import NavLinks from '../components/NavigationMenu';
 
 const OrientationVideo = ({video}) => {
     return (

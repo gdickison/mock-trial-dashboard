@@ -1,6 +1,6 @@
-import DashboardLinks from './DashboardLinks';
-import DashboardHeader from './DashboardHeader';
-import NavLinks from './NavigationMenu';
+import DashboardLinks from '../components/DashboardLinks';
+import DashboardHeader from '../components/DashboardHeader';
+import NavLinks from '../components/NavigationMenu';
 
 const MyTeam = ({links, headerImage, type}) => {
     return (

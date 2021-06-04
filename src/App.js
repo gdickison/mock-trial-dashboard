@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import MyTeam from './components/MyTeam';
-import FourOhFour from './components/FourOhFour';
-import Dashboard from './components/Dashboard';
-import OrientationVideo from './components/OrientationVideo';
-import Registration from './components/Registration';
+import Home from './pages/Home';
+import MyTeam from './pages/MyTeam';
+import FourOhFour from './pages/FourOhFour';
+import Dashboard from './pages/Dashboard';
+import OrientationVideo from './pages/OrientationVideo';
+import Registration from './pages/Registration';
+import Auth from './pages/Auth';
 
 const stateLogo = "images/ILF-blue-horizontal.png";
 const homeLinks = [
@@ -72,6 +73,9 @@ function App() {
         </Route>
         <Route path="/register_team" exact>
           <Registration />
+        </Route>
+        <Route path="/auth">
+          <Auth />
         </Route>
         <Redirect to="/"/>
         <Route path="/*">

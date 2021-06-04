@@ -12,8 +12,8 @@ const InputWrapper = styled.div`
     margin: 15px 0 10px 0;
 `;
 
-const StyledTextInput = styled.input.attrs(({id}) => ({
-    type: 'text',
+const StyledTextInput = styled.input.attrs(({id, type}) => ({
+    type: type,
     id: id
 }))`
     border: 2px solid green;
@@ -21,7 +21,7 @@ const StyledTextInput = styled.input.attrs(({id}) => ({
     height: 20px;
 `;
 
-export const TextInput = ({id, label}) => {
+export const TextInput = ({id, type, label}) => {
     const [name, setName] = useState("");
 
     const handleNameChange = e => {
@@ -31,7 +31,7 @@ export const TextInput = ({id, label}) => {
     return (
         <InputWrapper className="inputDiv">
             <InputLabel htmlFor={id}>{label}</InputLabel>
-            <StyledTextInput id={id} value={name} onChange={handleNameChange} />
+            <StyledTextInput id={id} value={name} type={type} onChange={handleNameChange} />
         </InputWrapper>
     );
 };

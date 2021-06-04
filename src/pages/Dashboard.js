@@ -1,6 +1,6 @@
-import DashboardHeader from './DashboardHeader';
-import DashboardLinks from './DashboardLinks';
-import NavLinks from './NavigationMenu';
+import DashboardHeader from '../components/DashboardHeader';
+import DashboardLinks from '../components/DashboardLinks';
+import NavLinks from '../components/NavigationMenu';
 
 const Dashboard = ({headerImage, type, links}) => {
     return(
